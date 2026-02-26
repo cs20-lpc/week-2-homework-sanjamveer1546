@@ -1,20 +1,26 @@
+#ifndef CLASS_PAIR_TEMPLATE_HPP
+#define CLASS_PAIR_TEMPLATE_HPP
+
 #include <iostream>
+using namespace std;
 
-// TODO: Create a class template named Pair
-// It should accept TWO different data types
-
+// Pair class template accepts TWO different types
 template <typename T1, typename T2>
-class Pair {
+class Pair
+{
 private:
     T1 first;
     T2 second;
 
 public:
-    // TODO: Write PROTOTYPE for  constructor that initializes both values
+    // Constructor prototype
+    Pair(T1 a, T2 b);
 
-    // TODO: Write PROTOTYPE for  function named print()
-    // It should display both values in the format:
-    // (value1, value2)
+    // print prototype
+    void print() const;
 };
 
-// TO DO: Include implementation file here
+// Include implementation file
+#include "ClassPairTemplate.tpp"
+
+#endif
